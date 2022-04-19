@@ -1,0 +1,172 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.lala{
+  color: white;
+}
+.center{
+  text-align: center;
+}
+.border{
+  border: 0;
+  box-shadow: none;
+}
+.img-thumbnail{
+    background: none;
+    border: none;
+}
+.hei{
+  margin-bottom: 20px;
+}
+.hei1{
+  margin-bottom: 20px;
+}
+.linegame{
+  border-top: 2px solid black;
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+.text{
+  margin-top: 30px;
+  font-size: 20px;
+  color: white
+}
+.gtatext{
+  margin-bottom: 35px;
+  color: white;
+}
+.centergame{
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.witab{
+  width: 100px;
+}
+.circle{
+  border-radius: 30px;
+}
+.centergame1{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.minbox{
+  font-size: 15px;
+  background: #B7BF97;
+  margin-top: 30px;
+  padding-left: 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.top1{
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.bold{
+  font-weight: bold;
+  font-size: 20px;
+}
+.lasttext{
+  color: white;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.lastbox1{
+  background: rgb(38, 38, 38);
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+}
+.lastbox2{
+  background: rgb(38, 38, 38);
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+}
+.h1video{
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.video{
+  border-radius: 20px;
+  border: 5px solid rgb(38, 38, 38);
+}
+.footer1{
+  background: black;
+}
+.vid{
+  margin-bottom: 30px;
+}
+.vniz{
+  padding-bottom: 20px;
+}
+.success {
+  border-color: #04AA6D;
+  color: green;
+  background: rgba(245, 245, 245, 0.4);
+  margin-bottom: 20px;
+}
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background: orange;
+  color: white;
+}
+.fa-telegram {
+  background: #55ACEE;
+  color: white;
+}
+.fa {
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.nav-item{
+  padding-left: 50px !important;
+}
+.games__center{
+ padding-left: 50px;
+}
+.line{
+  border-bottom: 10px solid black;
+  margin-bottom: 20px;
+}
+#demo{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(245, 245, 245, 0.9);
+}
+.nicebutton{
+  opacity: 0.5;;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  border-radius: 7%;
+}

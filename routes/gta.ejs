@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NAMASSE</title>
+    <link rel="icon" type="icon" href="img/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;1,700&family=Space+Mono:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+    #panel, #flip {
+      padding: 7px;
+      text-align: center;
+      margin-left: 50px;
+    }
+    #flip{
+    }
+    #panel {
+      display: none;
+    }
+</style>
+  </head>
+  <body style="background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(2, 48, 32) 100%);">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black games__center">
+            <div class="container-fluid">
+                <img src="img/icon.ico" alt="" width="35" height="35" class="d-inline-block align-text-top">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/" style="color: white ; font-weight: bold">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games" style="color: white; font-weight: bold">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact" style="color: white; font-weight: bold">Contact us</a>
+                        </li>
+                        <audio id="sound1" src="../click.mp3" preload="auto"></audio>
+                        <div id="flip" class="text-white" style="font-weight: bold" onclick="document.getElementById('sound1').play();">
+                            Good luck
+                        </div>
+                        <div id="panel" class="text-white" style="font-weight: bold">Have fun</div>
+                        <div id="charging" class="fa"></div>
+                        <li class="nav-item">
+                            <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                            <!-- The Modal -->
+                            <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+                                <!-- Modal Content -->
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+  <section class="line">
+  <img class="mySlides" src="img/main.jpg " style="width:100%">
+  <img class="mySlides" src="img/main1.jpg" style="width:100%">
+  <img class="mySlides" src="img/main2.jpg" style="width:100%">
+</section>
+
+
+<footer id="about"></footer>
+<div class="row">
+  <div class="col-lg-1 col1">
+  </div>
+  <div class="col-lg-6 col2">
+    <h1 class="gtatext">GRAND THEFT AUTO 5</h1>
+    <img src="img/car1.jpg" class="img-fluid circle" alt="..." style="border: 5px solid black">
+    <h1 class="text">The Grand Theft Auto V: Premium Edition includes the complete GTAV story, Grand Theft Auto Online and all existing gameplay upgrades and content. You’ll also get the Criminal Enterprise Starter Pack, the fastest way to jumpstart your criminal empire in GTA Online.</h1>
+    <div class="minbox">
+      <p>NOTE:<br>
+      <p class="vniz">The $1,000,000 bonus cash in GTA Online included with the Premium Edition as part of the Criminal Enterprise Starter Pack may take up to 7-10 days after the player’s first session in GTA Online to be reflected in their in-game User Account. This bonus cash is only available to first-time Starter Pack owners.</p>
+    </div>
+      <h1  style="color: white">Grand Theft Auto V: Premium Edition</h1>
+      <p class="top1" style="color: rgba(245, 245, 245, 0.9)">The Grand Theft Auto V: Premium Edition includes the complete Grand Theft Auto V story experience, free access to the ever e
+        volving Grand Theft Auto Online and all existing gameplay upgrades and content including The Doomsday Heist, Gunrunning, Smuggler’s Run, Bikers and mu
+        h more. You’ll also get the Criminal Enterprise Starter Pack, the
+        fastest way to jumpstart your criminal empire in Grand Theft Auto Online.</p>
+
+        <h1 style="color: white">GRAND THEFT AUTO V</h1>
+        <p class="top1" style="color: rgba(245, 245, 245, 0.9)">When a young street hustler, a retired bank robber and a terrifying psychopath land themselves in trouble,
+         they must pull off a series of dangerous heists to survive in a city in which they can trust nobody, least of all each other.</p>
+
+         <h1 style="color: white">GRAND THEFT AUTO ONLINE</h1>
+         <p class="bold" style="color: rgba(245, 245, 245, 0.9)">Discover an ever-evolving world of choices and ways to play as you climb
+         the criminal ranks of Los Santos and Blaine County in the ultimate shared Online experience.</p>
+
+         <button class="nicebutton" onclick="typeWriter()">Click me for an interesting fact</button>
+         <p id="demo"></p>
+
+         <footer id="spec"></footer>
+             <button onclick="myFunction()" class="btn success lasttext">Hide/Show recommended characteristics for the game </button>
+             <div id="myDIV">
+             <div class="lastbox1">
+             <p style="color: white">Minimum</p>
+               <table class="table">
+           <tbody>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">OS</td>
+               <td style="color: white">Windows Vista</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Processor</td>
+               <td style="color: white">Intel Core 2 Duo 2.4 Ghz / AMD Athlon 64 X2 5400+</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Memory</td>
+               <td style="color: white">4 GB RAM</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Video Card</td>
+               <td style="color: white">NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Sound Card</td>
+               <td style="color: white">100% DirectX 10 compatible</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">HDD Space</td>
+               <td style="color: white">90 GB available space</td>
+             </tr>
+           </tbody>
+         </table>
+         </div>
+         <div class="lastbox2">
+         <p style="color: white">Recommended</p>
+         <table class="table">
+         <tbody>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">OS</td>
+         <td style="color: white">Windows Vista</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Processor</td>
+         <td style="color: white">Intel Core 2 Duo 2.4 Ghz / AMD Athlon 64 X2 5400+</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Memory</td>
+         <td style="color: white">4 GB RAM</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Video Card</td>
+         <td style="color: white">NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Sound Card</td>
+         <td style="color: white">100% DirectX 10 compatible</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">HDD Space</td>
+         <td style="color: white">90 GB available space</td>
+         </tr>
+         </tbody>
+         </table>
+         </div>
+       </div>
+
+  </div>
+
+
+
+  <div class="col-lg-5 col3">
+     <img src="img/gta.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="400px">
+     <button type="button" class="btn btn-primary btn-lg btn-success centergame hei">BUY NOW ONLY FOR 5000 TNG</button>
+     <button type="button" class="btn btn- btn-lg btn-success centergame hei">ADD TO WISH LIST</button>
+     <table class="table caption-top  witab centergame1 ">
+  <tbody>
+    <tr>
+      <th scope="col " style="color: white">DEVELOPER:</th>
+      <th scope="col"></th>
+      <th scope="col " style="color: white">⠀⠀⠀Rockstar Games</th>
+    </tr>
+    <tr>
+      <th scope="row" style="color: white">Publisher</th>
+      <td></td>
+      <td style="color: white">⠀⠀⠀Rockstar Games</td>
+    </tr>
+    <tr>
+      <th scope="row" style="color: white">Date</th>
+      <td></td>
+      <td style="color: white">⠀⠀⠀⠀⠀⠀⠀⠀⠀05/14/20</td>
+    </tr>
+    <tr>
+      <th scope="row" style="color: white" >Platform</th>
+      <td></td>
+      <td style="color: white">⠀⠀⠀⠀⠀⠀⠀⠀⠀Windows</td>
+    </tr>
+  </tbody>
+</table>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <figure class="figure centergame">
+       <img src="img/trev.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="300px">
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="figure centergame">
+       <img src="img/mi.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="300px">
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="figure centergame">
+       <img src="img/ni.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="300px">
+      </figure>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+<h1 class="h1video">OFFICIAL TRAILER OF THE GAME</h1>
+<iframe class="video centergame vid" src="https://vk.com/video_ext.php?oid=120489436&id=161208985&hash=961185ea27771a1d" width="350" height="240" ></iframe>
+  </div>
+</div>
+
+
+
+<footer class="site-footer"  style="background: rgb(218,218,218);">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12 col-md-6">
+         <h6 style="font-weight: bold; color: black ">About</h6>
+         <p class="text-justify" style="font-weight: bold; color: black">GameShop - games for everyone.</p>
+       </div>
+
+       <div class="col-xs-6 col-md-3">
+         <h6 style="font-weight: bold; color: black">Categories</h6>
+         <ul class="footer-links">
+           <li><a href=" " style="font-weight: bold; color: black">Home</a></li>
+     <li><a href="" style="font-weight: bold; color: black">Features</a></li>
+     <li><a href="" style="font-weight: bold; color: black">Pricing</a></li>
+         </ul>
+       </div>
+     </div>
+     <hr>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8 col-sm-6 col-xs-12">
+         <p class="copyright-text" style="font-weight: bold; color: black">NaMasse Team
+         </p>
+       </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12">
+         <ul class="social-icons">
+           <li><a href="#" class="fa fa-facebook"></a></li>
+           <li><a href="#" class="fa fa-twitter"></a></li>
+           <li><a href="#" class="fa fa-telegram"></a></li>
+           <li><a href="#" class="fa fa-instagram"></a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://kit.fontawesome.com/b13c41a4dc.js" crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+  </body>
+</html>

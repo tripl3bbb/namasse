@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>GAME SHOP</title>
+ <link rel="icon" type="icon" href="img/icon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [54.98, 82.89],
+                zoom: 13
+            });
+
+            DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+        });
+    </script>
+<style>
+#panel, #flip {
+  padding: 7px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+#flip{
+}
+#panel {
+  display: none;
+}
+</style>
+</head>
+
+<body style="background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);">
+ <header class="header">
+   <nav class="navbar navbar-expand-lg navbar-light bg-black games__center">
+    <div class="container-fluid">
+       <img src="img/icon.ico" alt="" width="35" height="35" class="d-inline-block align-text-top">
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/" style="color: white ; font-weight: bold">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="games" style="color: white; font-weight: bold">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact" style="color: white; font-weight: bold">Contact us</a>
+          </li>
+          <audio id="sound1" src="../click.mp3" preload="auto"></audio>
+          <div id="flip" class="text-white" style="font-weight: bold" onclick="document.getElementById('sound1').play();">
+            Good luck
+          </div>
+          <div id="panel" class="text-white" style="font-weight: bold">Have fun</div>
+          <div id="charging" class="fa"></div>
+          <li class="nav-item">
+            <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ </header>
+ <div class="container">
+	 <div class="row">
+    <div class = "recol">
+      <article class="about-img">
+    <h1 class="ml15">
+      <span class="word">GAME</span>
+      <span class="word">SHOP</span>
+    </h1>
+   </article>
+    </div>
+    <div class="col">
+     <p class="about-info__text about__center main-text" style="font-weight: bold"> Looking for interesting games for a good price? Game shop #1 Game store! We give you games for a low price than other shops all over the world.</p>
+     <a href="https://t.me/nahzryuab" class="button btn btn-dark btn-lg" ><span>Contact Us</span></a>
+         <a href="https://instagram.com/game_shop112233" target="_blank" class="button btn btn-light btn-lg"><span>See our works</span></a>
+    </div>
+ </div>
+  </div>
+ <section>
+   <div class="recol">
+<video class="about__center" width="1280" height="720" controls="controls" poster="img/gta6.jpg">
+<source src="img/gta.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+	</section>
+  <div class="section-title">
+ <h1 class="section-title__name mt-5 mb-4">Catalogue</h1>
+ <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/hitman.jpg" class="d-block w-50 center rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>HITMAN 2</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/gta.jpg" class="d-block w-50 center rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>GTA V</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/battle.jpg" class="d-block w-50 center rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Battle</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+
+	 </section>
+
+ <section>
+<div class="section-title">
+   <h2 class="section-title__name mt-5">Review</h2>
+  </div>
+     <div id="map" style="width:500px; height:400px"></div>
+<form class="games__center" action="">
+  <br><label for="name" class="f" style="font-weight: bold; color: black">Name:</label>
+  <input type="text" style="width: 200px;" id="name" class="f" name="name"></br>
+  <br><label for="comment" class="f" style="font-weight: bold; color: black">Comment:</label>
+  <input type="text" style="width: 200px;" id="comment" class="f" name="comment"></br>
+  <a href="" class=" button btn btn-dark btn-lg f" ><span>Submit</span></a>
+</form>
+</section>
+
+
+
+ <footer class="site-footer"  style="background: rgb(218,218,218);">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 style="font-weight: bold; color: black ">About</h6>
+            <p class="text-justify" style="font-weight: bold; color: black">GameShop - games for everyone.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="font-weight: bold; color: black">Categories</h6>
+            <ul class="footer-links">
+              <li><a href=" " style="font-weight: bold; color: black">Home</a></li>
+			  <li><a href="" style="font-weight: bold; color: black">Features</a></li>
+			  <li><a href="" style="font-weight: bold; color: black">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text" style="font-weight: bold; color: black">NaMasse Team
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fab fa-telegram-plane"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fab fa-vk"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://kit.fontawesome.com/b13c41a4dc.js" crossorigin="anonymous"></script>
+<script src="../js/index.js"></script>
+</body>
+
+</html>

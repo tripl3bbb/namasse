@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>THE ELDER SCROLLS V: SKYRIM</title>
+    <link rel="icon" type="icon" href="img/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../script.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;1,700&family=Space+Mono:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>  $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+    
+    
+    $('[data-text]').on('keyup', function(){
+      $(this).attr('data-text', $(this).text());
+    }); </script>
+    <style>
+      #panel, #flip {
+        padding: 7px;
+        text-align: center;
+        margin-left: 50px;
+      }
+      
+      #flip{
+      }
+      #panel {
+        display: none;
+      }
+      </style>
+  </head>
+  <body style="background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black games__center">
+            <div class="container-fluid">
+                <img src="img/icon.ico" alt="" width="35" height="35" class="d-inline-block align-text-top">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/" style="color: white ; font-weight: bold">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games" style="color: white; font-weight: bold">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact" style="color: white; font-weight: bold">Contact us</a>
+                        </li>
+                        <audio id="sound1" src="../click.mp3" preload="auto"></audio>
+                        <div id="flip" class="text-white" style="font-weight: bold" onclick="document.getElementById('sound1').play();">
+                            Good luck
+                        </div>
+                        <div id="panel" class="text-white" style="font-weight: bold">Have fun</div>
+                        <div id="charging" class="fa"></div>
+                        <li class="nav-item">
+                            <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                            <!-- The Modal -->
+                            <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+                                <!-- Modal Content -->
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+<footer id="about"></footer>
+<div class="row">
+  <div class="col-lg-1 col1">
+  </div>
+  <div class="col-lg-6 col2">
+    <h1 class="gtatext">THE ELDER SCROLLS V: SKYRIM</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <figure class="figure centergame">
+           <img src="img/3690820.webp" class="figure-img img-fluid rounded around centergame" alt="..." width="700px">
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="figure centergame">
+           <img src="img/537089.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="700px">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <h1 class="text">An updated version of the legendary The Elder Scrolls V: Skyrim </h1>
+    <div class="minbox">
+      <p>SET COMPOSITION<br>
+      <p class="vniz">The Elder Scrolls V: Skyrim – Special Edition <br>
+
+        The Elder Scrolls V: Skyrim Anniversary Upgrade</p>
+    </div>
+      <h1  style="color: white">THE ELDER SCROLLS V: SKYRIM ANNIVERSARY EDITION</h1>
+      <p class="top1" style="color: rgba(245, 245, 245, 0.6)">The new part of the cult fantasy series The Elder Scrolls from the renowned studio Bethesda Softworks has already won the hearts of millions of players and critics from around the world. Why do so many people adore The Elder Scrolls V: Skyrim? This game is loved for its fabulous medieval atmosphere, incredibly beautiful landscapes of snow-capped mountains, red forests and calm summer rivers. For the widest freedom of action in the best traditions of RPG, colorful characters, a variety of tasks, mysterious caves and a fascinating plot. We don't even have enough text for everything!
+
+        Start living a new virtual life by choosing your hero's appearance, weapons, abilities and fighting style. You are the chosen one. Dovakin. Dragonborn. You have to fight with the most dangerous monsters, wild animals, bandits, warriors of extinct races and defeat the strongest dragon Alduin, who plunged the whole country into fear and panic. Learn magic and the power of the word, which will give you an advantage over ordinary mortals, and will not let you fall before more powerful enemies.
+        
+        A new graphics engine, improved physics, a huge open world and redesigned gameplay take Skyrim to a whole new level both for the series itself and for the entire role-playing genre as a whole. Also, the most skilled players will be able to install various modifications with unique story tasks, an improved picture and new features created by ordinary fans.</p>
+
+
+        <h1 style="color: white">THE ELDER SCROLLS V: SKYRIM ANNIVERSARY EDITION</h1>
+        <p class="top1" style="color: rgba(245, 245, 245, 0.6)">"Skyrim" does not happen much. The game is loved even ten years after leaving the huge open world full of adventures. In TES V, you can forget about saving everything and everything and be a thief, a mercenary or a model parent for a couple of hundred hours. Also, mods prolong the life of the project. The tools for creating them are easy enough to master, and it provides plenty of room for creativity. Especially for the anniversary, the developers have released a special edition of Skyrim. It will suit both fans of modifications and those who are not sure of their ability to install them themselves. The Anniversary Edition has done everything for you: it includes all the official additions, as well as materials from the Creation Club, the "official" repository of user creations. You will find a lot of diverse content that does not violate ENT: new weapons, armor, tasks and gameplay features. Survival mode, fishing, references to Morrowind and Oblivion - it's worth returning to Tamriel for this!</p>
+
+
+         <h1 style="color: white">THE ELDER SCROLLS V: SKYRIM VR</h1>
+         <p style="color: rgba(245, 245, 245, 0.6)">Full immersion in Tamriel
+          Admit it, didn't you also want to see TES V on them right after the announcement of the new generation of VR helmets? Todd Howard definitely wanted to and, as it usually happens, made the wish come true. Another Skyrim offers to write the story of Dovakin in a new way - literally with his own hands. The game supports all modern devices (Oculus Rift, HTC Vive, Windows Mixed Reality, Valve Index) and does not require additional settings: just click "New Game" and get comfortable in the starting cart. Archery, sword fights, witchcraft — everything here is carried out with the help of "manual" controllers, but these are only the most basic amenities. Bethesda has redesigned the menu, inventory and quick access toolbar to provide a truly unprecedented gaming experience. All this is with a full set of add-ons and, of course, the ability to install mods. Skyrim travel has never been so immersive!</p>
+
+          <audio id="sound" src="../abm.mp3" preload="auto"> </audio>
+          <div  class="text-white" style="font-weight: bold" onclick="document.getElementById('sound').play();">
+          Soundtrack
+          </div>
+          </script>
+         <footer id="spec"></footer>
+             <h1 class="lasttext">Specifications</h1>
+             <div class="lastbox1">
+             <p style="color: white">Minimum</p>
+               <table class="table">
+           <tbody>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">OS</td>
+               <td style="color: white">Windows 7/8.1/10 (64-bit version)</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Processor</td>
+               <td style="color: white">Intel Core 2 Duo 2.4 Ghz / AMD Athlon 64 X2 5400+</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Memory</td>
+               <td style="color: white">4 GB RAM</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Video Card</td>
+               <td style="color: white">NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">Sound Card</td>
+               <td style="color: white">DirectX compatible sound card</td>
+             </tr>
+             <tr>
+               <th scope="row"></th>
+               <td style="color: white">HDD Space</td>
+               <td style="color: white">12 GB</td>
+             </tr>
+           </tbody>
+         </table>
+         </div>
+
+         <div class="lastbox2">
+         <p style="color: white">Recommended</p>
+         <table class="table">
+         <tbody>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">OS</td>
+         <td style="color: white">Windows 7/8.1/10 (64-bit version)</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Processor</td>
+         <td style="color: white">intel i5-2400/AMD FX-8320</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Memory</td>
+         <td style="color: white">8 GB OF RAM</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Video Card</td>
+         <td style="color: white">NVIDIA GTX 780 3 GB /AMD R9 290 4 GB</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">Sound Card</td>
+         <td style="color: white">DirectX compatible sound card</td>
+         </tr>
+         <tr>
+         <th scope="row"></th>
+         <td style="color: white">HDD Space</td>
+         <td style="color: white">12 GB</td>
+         </tr>
+         </tbody>
+         </table>
+         </div>
+
+  </div>
+  <div class="col-lg-4 col4">
+     <img src="https://s3.gaming-cdn.com/images/products/9407/orig/the-elder-scrolls-v-skyrim-anniversary-edition-anniversary-edition-pc-game-steam-cover.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="400px">
+     <button type="button" class="btn btn-primary btn-lg btn-success centergame hei">⠀⠀⠀BUY NOW⠀⠀⠀</button>
+     <button type="button" class="btn btn- btn-lg btn-success centergame hei">ADD TO WISH LIST</button>
+  <table class="table caption-top  witab centergame1 ">
+  <tbody>
+    <tr>
+      <th scope="row" style="color: white">DEVELOPER:</th>
+      <th scope="col" style="color: white"></th>
+      <th scope="col" style="color: white">Bethesda Game Studios</th>
+    </tr>
+    <tr>
+      <th scope="row" style="color: white">Publisher</th>
+      <td></td>
+      <td style="color: white">Bethesda Softworks</td>
+    </tr>
+    <tr>
+      <th scope="row" style="color: white">Date</th>
+      <td></td>
+      <td style="color: white">11/11/21</td>
+    </tr>
+    <tr>
+      <th scope="row" style="color: white" >Platform</th>
+      <td></td>
+      <td style="color: white">Windows</td>
+    </tr>
+  </tbody>
+</table>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <figure class="figure centergame">
+       <img src="img/11-110538_skyrim-landscape-hd.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="500px">
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="figure centergame">
+       <img src="img/37-376143_skyrim-wallpaper-hd-source-skyrim-desktop-wallpaper-hd.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="500px">
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="figure centergame">
+       <img src="img/48cd1b6fbc0660f635a8137a33262e42.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="500px">
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="figure centergame">
+       <img src="img/281ae24e1b2117a3a5c486cb30d74c4c.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="500px">
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="figure centergame">
+       <img src="img/bMqGM6qVnfLhANeExELTBM.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="500px">
+      </figure>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+<h1 class="h1video">OFFICIAL TRAILER OF THE GAME</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JSRtYpNRoN0?autoplay=1&mute=1" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+  </div>
+</div>
+
+<footer class="site-footer"  style="background: rgb(218,218,218);">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12 col-md-6">
+         <h6 style="font-weight: bold; color: black ">About</h6>
+         <p class="text-justify" style="font-weight: bold; color: black">GameShop - games for everyone.</p>
+       </div>
+
+       <div class="col-xs-6 col-md-3">
+         <h6 style="font-weight: bold; color: black">Categories</h6>
+         <ul class="footer-links">
+           <li><a href=" " style="font-weight: bold; color: black">Home</a></li>
+     <li><a href="" style="font-weight: bold; color: black">Features</a></li>
+     <li><a href="" style="font-weight: bold; color: black">Pricing</a></li>
+         </ul>
+       </div>
+     </div>
+     <hr>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8 col-sm-6 col-xs-12">
+         <p class="copyright-text" style="font-weight: bold; color: black">NaMasse Team
+         </p>
+       </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12">
+         <ul class="social-icons">
+           <li><a class="facebook" href="#"><i class="fab fa-instagram"></i></a></li>
+           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+           <li><a class="dribbble" href="#"><i class="fab fa-telegram-plane"></i></a></li>
+           <li><a class="linkedin" href="#"><i class="fab fa-vk"></i></a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://kit.fontawesome.com/b13c41a4dc.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>

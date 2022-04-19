@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "2gis-maps": "^3.7.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "namasse",
+  "version": "1.0.0",
+  "main": "script.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

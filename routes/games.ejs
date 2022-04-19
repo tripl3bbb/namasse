@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Shop</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b13c41a4dc.js" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-black games__center">
+            <div class="container-fluid">
+                <img src="img/icon.ico" alt="" width="35" height="35" class="d-inline-block align-text-top">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/" style="color: white ; font-weight: bold">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games" style="color: white; font-weight: bold">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact" style="color: white; font-weight: bold">Contact us</a>
+                        </li>
+                        <audio id="sound1" src="../click.mp3" preload="auto"></audio>
+                        <div id="flip" class="text-white" style="font-weight: bold" onclick="document.getElementById('sound1').play();">
+                            Good luck
+                        </div>
+                        <div id="panel" class="text-white" style="font-weight: bold">Have fun</div>
+                        <div id="charging" class="fa"></div>
+                        <li class="nav-item">
+                            <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                            <!-- The Modal -->
+                            <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+                                <!-- Modal Content -->
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main >
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="contact.ejs">Свяжитесь с нами</a>
+          <a href="index.ejs#cats">Ассортимент</a>
+          <a href="prices.html">Прайслист</a>
+          <a href="javascript:void(o)" onclick="phonkTog()">Включить / Выключить музыку</a>
+          <p style="color: rgba(255, 255, 255, 0.534);">Нажмите на кнопку И для Включения / Выключения музыки.</p>
+        </div>
+      </div>
+
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide container-fluid g-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="custom-carousel container-fluid" id="carousel1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-carousel container-fluid" id="carousel2"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="divider-page" id="about"></div>
+        <div class="container p-5 d-flex flex-column align-items-center text-center">
+            <h1 class="fw-normal align-items-center text-white">Добро пожаловать в Game shop.</h1>
+
+            <p class="lead mt-2 text-white">Здесь мы можете выбрать себе игру на ваш вкус. Так же вы можете нажать на кнопочку 'И' для включения и выключения фоновой музыки!</p>
+            <button class="btn btn-lg btn-secondary mt-3" id="phonkButton">Музыка</button>
+        </div>
+        <hr class="divider-page container mx-auto" id="cats" style="background-color: white;">
+
+        <div class="container d-flex flex-column align-items-center text-center">
+            <h1 class="fw-normal align-items-center text-white">Наш каталог</h1>
+            <br><br>
+        </div>
+        <div class="row container mx-auto">
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="cat1"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Skyrim</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="skyrim.ejs"><button class="btn btn-secondary mb-3">Открыть</button></a>
+                <small class="muted mx-auto mt-2 float-end">12500тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="cat2"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">GTA V</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="gta.ejs"><button class="btn btn-secondary mb-3">Открыть</button></a>
+                <small class="muted mx-auto mt-2 float-end">9500тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="cat3"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light"> Ватч догс</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-secondary mb-3">Открыть</button></a>
+                <small class="muted mx-auto mt-2 float-end">11000тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="cat4"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Генезиз</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-secondary mb-3">Открыть</button></a>
+                <small class="muted mx-auto mt-2 float-end">12000тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="cat6"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Chernobylite</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-secondary mb-3">Открыть</button></a>
+                <small class="muted mx-auto mt-2 float-end">Бесплатно.</small>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="cat7"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Dead Space</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-secondary mb-3">Открыть</button></a>
+                <small class="muted mx-auto mt-2 float-end">13000тг.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="divider-page"></div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6 style="font-weight: bold; color: black ">About</h6>
+              <p class="text-justify" style="font-weight: bold; color: black">GameShop - games for everyone.</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6 style="font-weight: bold; color: black">Categories</h6>
+              <ul class="footer-links">
+                <li><a href=" " style="font-weight: bold; color: black">Home</a></li>
+                <li><a href="" style="font-weight: bold; color: black">Features</a></li>
+                <li><a href="" style="font-weight: bold; color: black">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text" style="font-weight: bold; color: black">NaMasse Team
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fab fa-vk"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+    </main>
+
+
+    <script src="../public/script/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../public/script/script.js"></script>
+
+</body>
+
+</html>
