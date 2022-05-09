@@ -2,22 +2,21 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose")
 const bodyParser=require("body-parser")
+const router=express.Router();
 const ejs = require('ejs');
 
 const port = 3002;
 
 app.use(bodyParser.urlencoded({extended: true}));
-mongoose.connect("mongodb+srv://nahzryuab:stayugly241042@cluster0.r3edx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true}, {useUnifiedTopology: true})
-mongoose
-    .connect(Shop)
-    .then((res) => console.log("Connected to DB"))
-    .catch((error) => console.log("Error"));
+mongoose.connect("mongodb+srv://nahzryuab:stayugly241042@cluster0.r3edx.mongodb.net/Shop?retryWrites=true&w=majority", {useNewUrlParser: true}, {useUnifiedTopology: true})
+
 const users = {
     username: String,
     password: String
 }
+
 const Shop=mongoose.model("Users",users)
-app.use(express.static('public'));
+app.use(express('public'));
 app.set('view engine', 'ejs');
 
 
@@ -25,7 +24,7 @@ app.use("/", require("./routes/index"));
 
 router
     .route("/")
-    .get((req, res) => res.sendFile(__dirname+"./routes/index.ejs"))
+    .get((req, res) => res.sendFile(__dirname+"./routes/index"))
     .post((req,res)=>{
         let newUser= new Shop({
             username: req.body.username,

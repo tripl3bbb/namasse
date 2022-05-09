@@ -3,6 +3,24 @@
     "body-parser": "^1.20.0",
     "ejs": "^3.0.2",
     "express": "^4.17.3",
-    "mongoose": "^6.3.2"
-  }
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "namasse",
+  "version": "1.0.0",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripl3bbb/namasse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripl3bbb/namasse/issues"
+  },
+  "homepage": "https://github.com/tripl3bbb/namasse#readme",
+  "description": ""
 }
