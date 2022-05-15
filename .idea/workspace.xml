@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c5f68a-4287-4d95-b803-b54ef3fd07ae" name="Changes" comment="4 assignment">
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -78,7 +80,12 @@
       <workItem from="1650426476612" duration="1026000" />
       <workItem from="1650693069725" duration="11000" />
       <workItem from="1651609910876" duration="4417000" />
-      <workItem from="1652117367478" duration="3938000" />
+      <workItem from="1652117367478" duration="4921000" />
+      <workItem from="1652125946365" duration="943000" />
+      <workItem from="1652169783411" duration="957000" />
+      <workItem from="1652204575665" duration="283000" />
+      <workItem from="1652242184143" duration="659000" />
+      <workItem from="1652611120046" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="4 assignment">
       <created>1651614094756</created>
@@ -87,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651614094756</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="4 assignment">
+      <created>1652124944204</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652124944204</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
