@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="79c5f68a-4287-4d95-b803-b54ef3fd07ae" name="Changes" comment="4 assignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abm.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/click.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/click1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shortreport.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userModel.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +55,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.14.2" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.27" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/WebBack-main" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -85,7 +92,8 @@
       <workItem from="1652169783411" duration="957000" />
       <workItem from="1652204575665" duration="283000" />
       <workItem from="1652242184143" duration="659000" />
-      <workItem from="1652611120046" duration="648000" />
+      <workItem from="1652611120046" duration="2265000" />
+      <workItem from="1652714881372" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="4 assignment">
       <created>1651614094756</created>
