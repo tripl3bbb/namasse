@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
-const db = require('/config/config.js')
+const db = require('./config/config.js')
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
@@ -27,7 +27,7 @@ app.use("/contact", require("./routes/contact"));
 app.use("/games", require("./routes/games"));
 app.use("/gta", require("./routes/gta"));
 app.use("/skyrim", require("./routes/skyrim"));
-
+app.use("/reg", require("./routes/reg"));
 
 app.listen(port, () =>
     console.log(`App listening at http://localhost:${port}`)
