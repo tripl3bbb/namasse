@@ -46,9 +46,7 @@
           <li class="nav-item">
             <a class="nav-link" href="contact" style="color: white; font-weight: bold">Contact us</a>
           </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reg" style="color: white; font-weight: bold">Reg</a>
-            </li>
+
           <audio id="sound1" src="../click.mp3" preload="auto"></audio>
           <div id="flip" class="text-white" style="font-weight: bold" onclick="document.getElementById('sound1').play();">
             Good luck
@@ -56,7 +54,8 @@
           <div id="panel" class="text-white" style="font-weight: bold">Have fun</div>
           <div id="charging" class="fa"></div>
           <li class="nav-item">
-            <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id01').style.display='block'">Register</button>
+
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -73,13 +72,10 @@ class="close" title="Close Modal">&times;</span>
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="username" required>
 
-      <label><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      <button type="submit">Register</button>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
@@ -89,6 +85,35 @@ class="close" title="Close Modal">&times;</span>
   </form>
 </div>
           </li>
+            <li class="nav-item">
+                <button class="btn black" style="color:white;  font-weight: bold" onclick="document.getElementById('id02').style.display='block'">Login</button>
+            </li>
+            <div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="/" method="post">
+                    <div class="imgcontainer">
+                        <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
         </ul>
       </div>
     </div>

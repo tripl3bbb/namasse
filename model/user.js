@@ -6,12 +6,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    Email: {
+    Password: {
         type: String,
         required: true,
     }
 });
 
-
-module.exports = mongoose.model('Post', userSchema)
+let something = new mongoose.model('Users', userSchema)
+module.exports = something
 

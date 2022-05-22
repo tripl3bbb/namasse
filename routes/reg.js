@@ -9,5 +9,6 @@ router
     .route("/")
     .get((req, res) => res.render('/reg.ejs'))
     .post(UserAddController.addUser)
+    .post((req, res) => res.render(__dirname+"/index.ejs"));
 
 module.exports = router;

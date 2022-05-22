@@ -1,9 +1,14 @@
 const Users = require("../model/user");
-module.exports.addUser = (req,res)=> {
-    let newUsers = new Users({
+module.exports.addUser = async (req,res)=> {
+    if (!req.body.username && !req.body.password) {
+        res.status(400).render('../ index', {mydata: "Content can not be empty!"})
+    }
+    const user = new Users({
         Username: req.body.username,
-        Email: req.body.email,
+        Password: req.body.password,
     })
-    newUsers.save();
-    res.redirect('/');
-}
+    await user.save().then(Data=>{res.render('../index', {mydata: "user "+ data.username +" created succesfully!"})
+    }).catch(err => {
+        res.render('index', {mydata: err.message || "Some error occurred while creating user"})
+        res.redirect('/')
+    })}
